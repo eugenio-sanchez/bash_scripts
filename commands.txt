@@ -1,0 +1,4 @@
+# List of commands to be installed by create-commands.sh
+create-python-venv
+create-jupyter-venv
+tiny-core-kvm-run
