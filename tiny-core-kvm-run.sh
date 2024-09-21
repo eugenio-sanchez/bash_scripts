@@ -33,7 +33,6 @@ sudo apt -y install virt-manager bridge-utils cpu-checker libvirt-clients libvir
 sudo kvm-ok
 
 # Checking if we have our image, if not we are downloading it
-
 cd /var/lib/libvirt/images/ || { echo "Failed to access /var/lib/libvirt/images/"; exit 1; }
 
 TINY_CORE_ISO="Core-15.0.iso"
@@ -49,17 +48,7 @@ else
 fi
 
 
-
 qemu-img create -f qcow2 /var/lib/libvirt/images/$TINY_CORE_DISK_IMAGE 2G
-
-
-# Check if the disk image already exists
-#if [ -f "$TINY_CORE_DISK_IMAGE" ]; then
-#    echo "$TINY_CORE_DISK_IMAGE already exists. No need to create."
-#else
-#    echo "Creating qcow2 disk image"
-#    qemu-img create -f qcow2 /var/lib/libvirt/images/tinycore-vm.qcow2 2G
-#fi
 
 echo "Setup completed successfully."
 

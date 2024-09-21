@@ -7,4 +7,7 @@ This collection of Bash scripts installs custom terminal commands that help set 
   This command sets up a Python virtual environment, creates a `main.py` file, and automatically opens Visual Studio Code (if installed).
 
 - **create-jupyter-venv:**  
-  This command sets up a virtual environment with Jupyter Notebook and installs popular data science libraries
+  This command sets up a virtual environment with Jupyter Notebook and installs popular data science librarie
+
+- **tiny-core-kvm-run:**
+  This command creates a VM with tiny core.
